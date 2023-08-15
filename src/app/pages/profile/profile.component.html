@@ -1,0 +1,30 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="container  text center">
+           <img  class="profile-image"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAMAAADxY+0hAAAAMFBMVEW6urr///+/v7+3t7f8/Pz5+fm0tLT09PTNzc3j4+Pq6urKysrX19fU1NTx8fHd3d1qxNm7AAACc0lEQVRoge2Z25KDIAxAgchFQf3/v11ct6PtaCWY4MxOztNuX04aAg1BKUEQBEEQBEEQhAJg5RG1AxNSPwxDn4LJ/7W1Q+yt3rB9bJgGUMlr3e38+W+fVKsIRq+P8GMLOZjh0L4wGPYUQLSn+k7byBwAhFP7SmANAMYLvdYjYwAQukt/x5gBc63PARguPRzvu088UwJgLtJrPfMEUJR9vhVwfaFe694x+Iu/Pk8CIBXrtU70FQATwj/R+xHp51iAgpN3D/kpDOXVv9BT+x1m+XMBUO9AOP/ZP8KS5/9hv8KUf94A1HqF/P7U+qfz78p++1946vp35133EQP5/ittPlbIW5DLxvsd+ibUYArQ0jcAqAIgX/4MZgECvV6p8h3oOfS5Ayg9g5nuYKUJYPn6y9W70M91CS+8AbB0/yslTdDEZldgrkvAc85g4PIUtNwjoO8ZYCr9Pd/O4YFfn8+hszWwnLOfXQDmuBeY+ad/WwSfZeDb2X8jUHGe7Pp70Nlpjs2Gv7sQjIkhhGhMe/kWxGPqx4GN1uLcjsYYxjEtjGOI0awfN5CbmPrJ249eyPqpT5F3D4Jzedf9id/9rw/zTnRMb1GgQlkLPgSGTZGPvPILiKU+DEEh7GsEpDlIuOnHQpeo5C7iZl8vpkjSiKIGv++QjIFxF/935vvfHjf3/GS4mQHk2OUggFs1kG88+Mrf0926DSGHLsfcGMWgZi5n1M9iEC9O36heAdSTxzm1jyE3t95G7WMExeovVA6jKYp/pWocRpb+ygVAPfh9p+45kGr5a18DyPRa1+gNob/mBBC/+MUvfvGLX/ziF7/4xS/+/+X/AV4QHhiEyA0mAAAAAElFTkSuQmCC"/>
+        </div>
+        <div class="container">
+            <h1 class="text center">{{user.firstName}}   {{user.lastName}}</h1>
+            <div class="table-sides">
+               
+            <table>
+                <tr>
+                    <td>USERNAME</td>
+                    <td>FIRST NAME</td>
+                    <td>LAST NAME</td>
+                    <td>EMAIL</td>
+                    <td>PHONE</td>
+                </tr>
+                <tr>
+                    <td>{{user.username}}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>{{user.email}}</td>
+                    <td>{{user.phone}}</td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        
+    </div>
+</div>

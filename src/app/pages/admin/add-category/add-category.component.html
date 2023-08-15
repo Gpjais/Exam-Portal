@@ -1,0 +1,28 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6  offset-md-3" style="margin-top: 10%">
+                 <h1 style="text-align: center;">Please Enter Category Details</h1>
+                <form (ngSubmit)="formsubmit()">
+                    <mat-form-field appearance="outline" class="field">
+                        <mat-label>Category name</mat-label>
+                        <input
+                        [(ngModel)]="category.title"
+                        name="title"
+                        matInput placeholder="category  title">
+                      </mat-form-field>
+                      <mat-form-field class="field">
+                        <mat-label>Category Description</mat-label>
+                        <textarea 
+                        [(ngModel)]="category.desccription"
+                        name="desccription"
+                        matInput></textarea>
+                      </mat-form-field>
+                      <div class="container text-center"  style="margin-bottom: 20px; margin-top: 10px; margin-left: 160px;">
+                        <button type="submit" mat-raised-button color="primary" style="margin-right: 60px;" >ADD</button>
+                      </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

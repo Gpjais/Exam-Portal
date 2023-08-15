@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-list>
+        <div class="mat-subheader">
+         ALL CATEGORIES
+        </div>
+        <mat-list-item *ngFor="let cs of categories">
+            <div mat-line>{{cs.title}}
+                <button  (click)="deletecategory(cs.cid)" mat-raised-button color="primary" style="float: right; margin-left: 20px;">Delete</button>
+                <button   mat-raised-button color="primary" style="float: right;">Update</button>
+            </div>
+            <div mat-line>{{cs.desccription}}</div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</mat-card>
+
