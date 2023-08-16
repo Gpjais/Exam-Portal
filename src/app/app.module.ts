@@ -35,8 +35,9 @@ import {MatSelectModule} from '@angular/material/select';
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
 import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
 import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
-
-
+import Swal from 'sweetalert2/dist/sweetalert2.js';
+import { SidebarUserComponent } from './pages/user/sidebar-user/sidebar-user.component';
+import { LoadQuizzesComponent } from './pages/user/load-quizzes/load-quizzes.component';  
 
 @NgModule({
   declarations: [
@@ -58,6 +59,8 @@ import { AddQuestionComponent } from './pages/admin/add-question/add-question.co
     UpdateQuizComponent,
     ViewQuizQuestionsComponent,
     AddQuestionComponent,
+    SidebarUserComponent,
+    LoadQuizzesComponent,
   ],
   imports: [
     BrowserModule,
@@ -76,7 +79,8 @@ import { AddQuestionComponent } from './pages/admin/add-question/add-question.co
     MatCardModule,
     MatTableModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+
   ],
   providers: [
     authInterceptorProviders

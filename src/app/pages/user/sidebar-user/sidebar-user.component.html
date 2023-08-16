@@ -1,0 +1,12 @@
+<mat-card style="margin-top: 20px; background-color:#5e35b1">
+                   
+    <mat-action-list>
+        <button mat-list-item style="border-radius: 30px; background-color: rgb(199, 211, 85);">EXAM PORTAL</button>
+        <br>
+        
+        <button *ngFor="let c of categories"
+         mat-list-item><mat-icon style="margin-right: 10px;">home</mat-icon> {{c.title}}</button>
+        
+     </mat-action-list>
+</mat-card>
+
