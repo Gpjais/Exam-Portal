@@ -8,7 +8,7 @@ import { ViewCategoryComponent } from '../pages/admin/view-category/view-categor
 })
 export class CategoryService {
    
-cid: any;
+
    
   constructor(private Http:HttpClient ) { }
 
@@ -21,6 +21,12 @@ cid: any;
   public deleteCategory(id)
   {
     return this.Http.delete(`${baseurl}/category/delete/${id}`);
+  }
+ 
+  // get the category by id 
+  public getcategorybyid(cat_cid)
+  {
+   return this.Http.get(`${baseurl}/category/${cat_cid}`);
   }
   
 }

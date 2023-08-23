@@ -1,20 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import baseurl from './helper';
+import { ActivatedRoute } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuizService {
 
-  constructor(private http:HttpClient) { }
+  
+
+  constructor(private http:HttpClient ) { }
 
   loadQuizes()
   {
     return this.http.get(`${baseurl}/quiz/quizes`);
   }
 
- public addquiz(quiz: { quiz_title: string; quiz_description: string; max_marks: string; no_of_question: string; active: string; category: { cid: string; }; })
+ public addquiz(quiz)
   {
     console.log("quiz service called");
     return this.http.post(`${baseurl}/quiz/add`,quiz)
@@ -42,4 +45,10 @@ export class QuizService {
       }
     )
   }
+  
+  getquizzesofcategory(cid)
+  {
+   return  this.http.get(`${baseurl}/quiz/find/${cid}`);
+  }
+
 }

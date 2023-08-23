@@ -17,6 +17,8 @@ import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.compo
 import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
 import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
 import { LoadQuizzesComponent } from './pages/user/load-quizzes/load-quizzes.component';
+import { InstructionComponent } from './pages/user/instruction/instruction.component';
+import { StartComponent } from './pages/user/start/start.component';
 
 
 
@@ -87,12 +89,19 @@ const routes: Routes = [
     component:UserDashboardComponent,
     children:[
       {
-        path:'',
+        path:':cid',
         component: LoadQuizzesComponent,
       },
+      {
+        path:'instructions/:qid',
+        component: InstructionComponent
+      }
     ]
   },
-  
+  {
+    path:'start/:qid',
+    component: StartComponent
+  }
 ];
 
 @NgModule({
